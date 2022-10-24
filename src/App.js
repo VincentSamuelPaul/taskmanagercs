@@ -23,7 +23,7 @@ const App = ({user, setUser}) => {
         }
     };
 
-    useEffect((getTasks) => {
+    useEffect(() => {
       getTasks();
     }, []);
 
