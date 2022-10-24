@@ -1,8 +1,7 @@
 import PropTypes from 'prop-types'
 import Button from './Button'
-import { useState } from 'react'
 
-const Header = ({ title, onAdd, showAdd, user, setUser, getTasks }) => {
+const Header = ({ onAdd, showAdd, user, setUser }) => {
 
     const clearUser = () => {
         setUser('');
@@ -27,11 +26,6 @@ Header.defaultProps = {
 
 Header.propTypes = {
     title: PropTypes.string.isRequired,
-}
-
-const headingStyle = {
-    color:'red',
-    backgroundColor:'black',
 }
 
 export default Header

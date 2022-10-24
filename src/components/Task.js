@@ -11,7 +11,6 @@ const Task = ({ task, user, getTasks }) => {
             },
             body:JSON.stringify({'username':user, 'task':task[0]})
         });
-        const data = await response.json();
         if (response.status === 200) {
             getTasks();
         };
@@ -25,7 +24,6 @@ const Task = ({ task, user, getTasks }) => {
             },
             body:JSON.stringify({'username':user, 'task':task[0]})
         });
-        const data = await response.json();
         if (response.status === 200) {
             getTasks();
         };

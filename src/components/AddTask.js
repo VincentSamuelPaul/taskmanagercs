@@ -3,7 +3,6 @@ import { useState } from "react"
 const AddTask = ({ onAdd, user, getTasks }) => {
     const [text, setText] = useState('')
     const [day, setDay] = useState('')
-    const [task, setTask] = useState([]);
 
 
     const addTask = async(e) => {

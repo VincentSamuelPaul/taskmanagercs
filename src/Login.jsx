@@ -8,7 +8,7 @@ const Login = ({user, setUser}) => {
     const [password, setPassword] = useState('');
 
     const signUp = async() => {
-        if (username == '' && password == '') {
+        if (username === '' && password === '') {
             setMessage('username and password cant be none');
         }
         else if (username.length < 5 && password.length < 5 ) {
@@ -37,7 +37,7 @@ const Login = ({user, setUser}) => {
     };
 
     const logIn = async() => {
-        if (username == '' && password == '') {
+        if (username === '' && password === '') {
             setMessage('username and password cant be none');
         }
         else {
