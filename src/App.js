@@ -25,7 +25,7 @@ const App = ({user, setUser}) => {
 
     useEffect(() => {
       getTasks();
-    });
+    }, [getTasks]);
 
 
     // Toggle reminder
