@@ -10,7 +10,7 @@ const App = ({user, setUser}) => {
     const [tasks, setTasks] = useState(0);
 
     const getTasks = async() => {
-        const response = await fetch('http://127.0.0.1:8000/api/tasks/', {
+        const response = await fetch('https://taskmanagercs.herokuapp.com/api/tasks/', {
           method:'POST',
           headers:{
             'Content-Type':'application/json',

@@ -15,7 +15,7 @@ const Login = ({user, setUser}) => {
             setMessage('username and password must longer than 5 characters')
         }
         else {
-            const response = await fetch('http://127.0.0.1:8000/api/signup/', {
+            const response = await fetch('https://taskmanagercs.herokuapp.com/api/signup/', {
             method:'POST',
             headers:{
                 'Content-Type':'application/json',
@@ -41,7 +41,7 @@ const Login = ({user, setUser}) => {
             setMessage('username and password cant be none');
         }
         else {
-            const response = await fetch('http://127.0.0.1:8000/api/login/', {
+            const response = await fetch('https://taskmanagercs.herokuapp.com/api/login/', {
             method:'POST',
             headers:{
                 'Content-Type':'application/json',

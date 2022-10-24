@@ -4,7 +4,7 @@ import { FaTimes } from 'react-icons/fa';
 const Task = ({ task, user, getTasks }) => {
 
     const deleteTask = async() => {
-        const response = await fetch('http://127.0.0.1:8000/api/deletetask/', {
+        const response = await fetch('https://taskmanagercs.herokuapp.com/api/deletetask/', {
             method:'POST',
             headers:{
                 'Content-Type':'application/json',
@@ -17,7 +17,7 @@ const Task = ({ task, user, getTasks }) => {
     };
 
     const completed = async() => {
-        const response = await fetch('http://127.0.0.1:8000/api/completed/', {
+        const response = await fetch('https://taskmanagercs.herokuapp.com/api/completed/', {
             method:'POST',
             headers:{
                 'Content-Type':'application/json',

@@ -13,7 +13,7 @@ const AddTask = ({ onAdd, user, getTasks }) => {
         }
         setText('')
         setDay('')
-        const response = await fetch('http://127.0.0.1:8000/api/addtask/', {
+        const response = await fetch('https://taskmanagercs.herokuapp.com/api/addtask/', {
             method:'POST',
             headers:{
                 'Content-Type':'application/json',
